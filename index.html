@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAH WATER SUPPLY | Motihari</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f0f9ff;color:#123047}
+header{background:linear-gradient(135deg,#075985,#0891b2);color:white;text-align:center;padding:35px 15px}
+header h1{margin:0;font-size:34px}
+header p{margin:10px 0}
+nav{background:#fff;padding:14px;text-align:center;box-shadow:0 2px 8px #0001}
+nav a{color:#075985;text-decoration:none;font-weight:bold;margin:0 12px}
+.hero{text-align:center;padding:35px 15px}
+.hero h2{font-size:28px;color:#075985}
+.hero p{color:#526779}
+.products{max-width:1100px;margin:auto;padding:15px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:white;border-radius:16px;padding:18px;text-align:center;box-shadow:0 5px 18px #07598518}
+.card img{width:100%;height:210px;object-fit:contain;background:#f8fcff;border-radius:10px}
+.card h3{margin:14px 0 8px}
+.old{color:#7b8794;text-decoration:line-through}
+.price{font-size:25px;color:#087f5b;font-weight:bold;margin:8px}
+.discount{color:#d9480f;font-weight:bold}
+button,.order{display:inline-block;border:0;border-radius:9px;background:#16a34a;color:white;padding:12px 18px;font-size:15px;font-weight:bold;text-decoration:none;cursor:pointer;margin-top:10px}
+.contact{margin:30px 15px;background:white;padding:25px;border-radius:15px;text-align:center}
+footer{background:#073b56;color:white;text-align:center;padding:22px;margin-top:30px}
+@media(max-width:480px){header h1{font-size:27px}.hero h2{font-size:23px}}
+</style>
+</head>
+<body>
+
+<header>
+<h1>💧 SAH WATER SUPPLY</h1>
+<p>Fresh Drinking Water • Best Prices • Easy Ordering</p>
+<p>📍 Janpul Chowk, Near Sanjay Cineplex, Motihari, Bihar 845401</p>
+</header>
+
+<nav>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+<h2>Choose Your Water Bottle</h2>
+<p>Order easily on WhatsApp. Great prices for every size!</p>
+</section>
+
+<section class="products" id="products">
+
+<div class="card">
+<img src="small-250ml.png" alt="250 ml water bottle">
+<h3>Small Bottle — 250 ml</h3>
+<p class="old">₹8</p>
+<p class="discount">25% OFF</p>
+<p class="price">₹6</p>
+<button onclick="order('Small 250 ml',6)">Order Now</button>
+</div>
+
+<div class="card">
+<img src="medium-500ml.png" alt="500 ml water bottle">
+<h3>Medium Bottle — 500 ml</h3>
+<p class="old">₹10</p>
+<p class="discount">20% OFF</p>
+<p class="price">₹8</p>
+<button onclick="order('Medium 500 ml',8)">Order Now</button>
+</div>
+
+<div class="card">
+<img src="large-1l.png" alt="1 litre water bottle">
+<h3>Large Bottle — 1 Litre</h3>
+<p class="old">₹20</p>
+<p class="discount">30% OFF</p>
+<p class="price">₹14</p>
+<button onclick="order('Large 1 Litre',14)">Order Now</button>
+</div>
+
+<div class="card">
+<img src="extra-large-5l.png" alt="5 litre water bottle">
+<h3>Extra Large — 5 Litre</h3>
+<p class="old">₹50</p>
+<p class="discount">20% OFF</p>
+<p class="price">₹40</p>
+<button onclick="order('Extra Large 5 Litre',40)">Order Now</button>
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+<h2>Contact & Orders</h2>
+<p><strong>SAH WATER SUPPLY</strong></p>
+<p>📍 Janpul Chowk, Near Sanjay Cineplex, Motihari Bihar 845401</p>
+<p>📞 7903428982</p>
+<a class="order" href="https://wa.me/917903428982" target="_blank">Chat on WhatsApp</a>
+</section>
+
+<footer>
+<p>© 2026 SAH WATER SUPPLY</p>
+<p>Thank you for choosing us! 💧</p>
+</footer>
+
+<script>
+function order(product, price) {
+  const message = "Hello SAH WATER SUPPLY! I want to order " +
+    product + " at ₹" + price + ". Please confirm availability.";
+  window.open("https://wa.me/917903428982?text=" +
+    encodeURIComponent(message), "_blank");
+}
+</script>
+
+</body>
+</html>
